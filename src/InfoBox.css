@@ -1,0 +1,39 @@
+.infoBox {
+  /* for each of the info box apply flex:1 
+  so all infobiox will take as much space as it can
+  */
+  flex: 1;
+  cursor: pointer;
+}
+
+.infoBox:not(:last-child) {
+  /*add margine right to every infobox except last one*/
+  margin-right: 10px;
+}
+
+.infoBox--selected {
+  border-top: 10px solid greenyellow;
+}
+
+.infoBox--red {
+  border-color: red;
+}
+
+.infoBox__cases--green {
+  color: lightgreen !important;
+}
+
+.infoBox__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  /*importanat written so that we can override material ui*/
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
